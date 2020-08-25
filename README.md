@@ -1,2 +1,2 @@
 # InfraredDemo
-使用Android手机与esp8266开发板+DHT11温湿度模块实现的非智能空调智能控温
+使用Android手机红外功能与esp8266开发板+DHT11温湿度模块实现的非智能空调智能控温
