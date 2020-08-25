@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
                             Message msg=handler.obtainMessage(0,recStr);
                             handler.sendMessage(msg);
                             Thread.sleep(1000);
+                             if(in.available()<=0) break;
                         }
 
                     } catch (Exception e) {
