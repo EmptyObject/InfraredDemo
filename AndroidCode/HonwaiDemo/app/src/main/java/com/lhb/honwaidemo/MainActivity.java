@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                             recStr=new String(buf,0,len);
                             Message msg=handler.obtainMessage(0,recStr);
                             handler.sendMessage(msg);
-
+                            Thread.sleep(1000);
                         }
 
                     } catch (Exception e) {
@@ -161,8 +161,8 @@ public class MainActivity extends AppCompatActivity {
                             controlTempKeyPress(30,AUTO);
                         }
                         try {
-                            //该线程每隔3分钟检测一次室内温度是否大/小于阈值，时间可自行修改设定
-                            Thread.sleep(180000);
+                            //该线程每隔1分钟检测一次室内温度是否大/小于阈值，时间可自行修改设定
+                            Thread.sleep(60000);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
