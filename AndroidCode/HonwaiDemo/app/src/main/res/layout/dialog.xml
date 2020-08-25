@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.1.102"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="port"
+        android:inputType="textPersonName"
+        android:text="8080"
+        app:layout_constraintStart_toStartOf="@+id/etIP"
+        app:layout_constraintTop_toBottomOf="@+id/etIP" />
+
+    <EditText
+        android:id="@+id/etTempFazhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Switch
+        android:id="@+id/swbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:onClick="btnClick"
+        android:text="智能控温模式：关"
+        app:layout_constraintStart_toStartOf="@+id/etTempFazhi"
+        app:layout_constraintTop_toBottomOf="@+id/etTempFazhi" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="智能控温模式温度阈值：）"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etPort"
+        app:layout_constraintTop_toBottomOf="@+id/etPort" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="温湿度传感器IP：\n(以下各值设置后重启app生效）"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etIP"
+        app:layout_constraintStart_toStartOf="@+id/etIP" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="11dp"
+        android:text="温湿度传感器端口："
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etPort"
+        app:layout_constraintStart_toStartOf="@+id/etPort" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
