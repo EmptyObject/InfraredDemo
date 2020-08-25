@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="智能控温模式温度阈值：）"
+        android:text="智能控温模式温度阈值："
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/etPort"
         app:layout_constraintTop_toBottomOf="@+id/etPort" />
